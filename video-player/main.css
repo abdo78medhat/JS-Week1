@@ -1,0 +1,106 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+body{
+    background-color: rgba(117, 36, 193, 0.573);
+}
+* {
+    box-sizing: inherit;
+}
+.player{
+    margin: 150px auto;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    position: relative;
+}
+.player__video{
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    height: 100%;
+    width: 100%;
+}
+.player__controls{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 100%;
+    display: block;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    opacity: 0;
+}
+.player__controls:hover{
+    opacity: 1;
+}
+.progress{
+    background-color: rgba(0, 0, 0, 0.769);
+    height: 10px;
+    flex: 10;
+    display: flex;
+    width: 95%;
+    position: relative;
+    flex-basis: 100%;
+    border-radius: 10px;
+    transition: height 0.3s;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    -ms-transition: height 0.3s;
+    -o-transition: height 0.3s;
+    cursor: ew-resize;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.progress__filled{
+    background-color: blueviolet;
+    flex: 0;
+    border-radius: 10px;
+    flex-basis: 50%;
+    width: 50%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.toggle{
+    padding: 0;
+    border-radius: 10px;
+    border: none;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    padding-left: -2px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.player__slider{
+   border-radius: 0;
+   -webkit-border-radius: 0;
+   -moz-border-radius: 0;
+   -ms-border-radius: 0;
+   -o-border-radius: 0;
+}
+.player__button{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: none;
+}
